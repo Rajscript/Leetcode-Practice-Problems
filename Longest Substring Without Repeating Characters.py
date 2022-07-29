@@ -11,6 +11,6 @@ class Solution:
             elif s[r] in new:
                 new =new[1::]
                 l+=1
-            if len(old)<len(new):
+            if len(old)<len(new):    #Updating the largest substring
                 old=new
-        return len(old)           
+        return len(old)              #return the length of the largest substring
